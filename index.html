@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenView</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <div class="sidebar-top">
+                <div class="logo">
+                    <i class="fa-solid fa-cube logo-icon"></i>
+                    <span>GenView</span>
+                </div>
+                
+                <div class="search-nav">
+                   <button class="nav-btn active"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+                   <button class="nav-btn"><i class="fa-solid fa-computer"></i> Computer</button>
+                </div>
+
+                <button class="new-thread-btn">
+                    <div class="btn-left">
+                        <i class="fa-solid fa-plus"></i>
+                        <span>New thread</span>
+                    </div>
+                </button>
+
+                <nav class="sidebar-nav">
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-clock-rotate-left"></i> History</a></li>
+                        <li><a href="#"><i class="fa-regular fa-compass"></i> Discover</a></li>
+                        <li><a href="#"><i class="fa-solid fa-layer-group"></i> Spaces</a></li>
+                        <li><a href="#"><i class="fa-solid fa-chart-line"></i> Finance</a></li>
+                        <li><a href="#"><i class="fa-solid fa-ellipsis"></i> More</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="sidebar-bottom">
+                <div class="recent-threads">
+                    <p class="section-title">Recent</p>
+                    <p class="recent-empty">Recent and active threads will appear here.</p>
+                </div>
+                <div class="upgrade-card">
+                    <i class="fa-solid fa-circle-arrow-up"></i>
+                    <span>Upgrade plan</span>
+                    <div class="notification-dot"></div>
+                </div>
+                <div class="user-profile">
+                    <div class="avatar">P</div>
+                    <div class="user-info">
+                        <span class="name">Praneetha Puv...</span>
+                    </div>
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="top-nav">
+                <div class="top-announcement">
+                    <span class="badge">New</span> Computer is now available on Pro <a href="#">Upgrade &rarr;</a>
+                </div>
+                <div class="top-actions">
+                    <button class="icon-btn-text"><i class="fa-regular fa-calendar-check"></i> Scheduled <i class="fa-solid fa-chevron-down"></i></button>
+                    <button class="icon-btn"><i class="fa-solid fa-book-open"></i></button>
+                </div>
+            </div>
+
+            <div class="center-content">
+                <h1 class="brand-title">GenView</h1>
+                
+                <div class="search-box">
+                    <div class="search-input-wrapper">
+                        <textarea placeholder="Type @ for connectors and sources" id="searchInput"></textarea>
+                    </div>
+                    <div class="search-actions">
+                        <div class="left-actions">
+                            <button class="action-btn computer-btn"><i class="fa-solid fa-plus"></i> <i class="fa-solid fa-computer"></i> Computer <i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <div class="right-actions">
+                            <button class="action-btn model-selector">Model <i class="fa-solid fa-chevron-down"></i></button>
+                            <button class="icon-btn"><i class="fa-solid fa-microphone"></i></button>
+                            <button class="submit-btn" id="submitBtn"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="suggestions-container">
+                    <div class="suggestions-header">
+                        <i class="fa-solid fa-computer"></i> Try Computer
+                    </div>
+                    <div class="suggestions-tabs">
+                        <button class="tab-btn active"><i class="fa-solid fa-lightbulb"></i> Help me learn</button>
+                        <button class="tab-btn"><i class="fa-solid fa-list-check"></i> Organize my life</button>
+                        <button class="tab-btn"><i class="fa-solid fa-eye"></i> Monitor the situation</button>
+                        <button class="tab-btn"><i class="fa-solid fa-code"></i> Create a prototype</button>
+                    </div>
+                    <div class="suggestions-list">
+                        <div class="suggestion-line">Help me deeply understand a confusing topic</div>
+                        <div class="suggestion-line">Find the best resources and give me a running digest</div>
+                        <div class="suggestion-line">Quiz me until I can recall it confidently</div>
+                        <div class="suggestion-line">Turn my notes into a polished write-up</div>
+                        <div class="suggestion-line">Compare tools or frameworks and recommend one</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
