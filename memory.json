@@ -1,0 +1,18 @@
+[
+  {
+    "role": "user",
+    "content": "my name is praneetha"
+  },
+  {
+    "role": "model",
+    "content": "Hello Praneetha! It's nice to know your name.\n\nHow can I help you today?"
+  },
+  {
+    "role": "user",
+    "content": "what is my name"
+  },
+  {
+    "role": "model",
+    "content": "Your name is Praneetha."
+  }
+]
